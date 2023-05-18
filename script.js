@@ -17,4 +17,23 @@ $(".time-block").each(function () {
   if (savedEvent !== null) {
     $(this).children(".description").val(savedEvent);
   }
+
+  
+  var blockHour = parseInt(time.split('-')[1]) 
+  var cuurent = dayjs().hour()
+  // blockHour less than current -> PAST
+  // blockhour equalt to current -> Present
+  // else -> future
+
+  if (blockHour < cuurent) {
+    $(this).addClass('past')
+
+  }
+else if (blockHour === cuurent) {
+  $(this).addClass('present')
+}
+else {
+$(this).addClass('future')
+}
 });
+
