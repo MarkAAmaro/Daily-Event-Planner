@@ -12,3 +12,5 @@
 ### Enter the site the next day to see your events to in motion!
 
 ![img1](./Assests/Saved%20planned%20events.png)
+
+Website: https://markaamaro.github.io/Daily-Event-Planner/
